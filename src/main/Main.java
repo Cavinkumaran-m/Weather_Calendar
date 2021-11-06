@@ -159,11 +159,16 @@ public class Main {
 		Integer table_data[][] = new Integer[6][7];
         
         int k = 0;
-        for(int i = 0; i < 6; i++) {
-        	for(int j = 0; j < 7; j++) {   
-        		table_data[i][j] = Integer.parseInt(data.get(k)[0]);
-        		k++;
-        	}
+        try {
+	        for(int i = 0; i < 6; i++) {
+	        	for(int j = 0; j < 7; j++) {   
+	        		table_data[i][j] = Integer.parseInt(data.get(k)[0]);
+	        		k++;
+	        	}
+	        }
+        }
+        catch(Exception e) {
+        	;
         }
         return table_data;
 	}
