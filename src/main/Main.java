@@ -48,8 +48,8 @@ public class Main {
 		//All Labels and components that makes up the GUI
 		String month = date_arr[1];
         Integer year = Integer.parseInt(date_arr[2]);
-        ImageIcon img = new ImageIcon("icon.PNG");
-        ImageIcon bg = new ImageIcon("bg.PNG");
+        ImageIcon img = new ImageIcon(Main.class.getResource("/images/icon.png"));
+        ImageIcon bg = new ImageIcon(Main.class.getResource("/images/bg.png"));
         JLabel bg_label = new JLabel(bg);
         bg_label.setVisible(true);
         bg_label.setBounds(0,0,500,400);
