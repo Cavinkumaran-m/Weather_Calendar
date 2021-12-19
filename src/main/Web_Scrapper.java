@@ -91,7 +91,7 @@ public class Web_Scrapper {
 	   String systemipaddress = "";
 	   try
        {
-           URL url_name = new URL("http://bot.whatismyipaddress.com");
+           URL url_name = new URL("https://ipapi.co/ip/");
            BufferedReader sc =
            new BufferedReader(new InputStreamReader(url_name.openStream()));  
            systemipaddress = sc.readLine().trim();
